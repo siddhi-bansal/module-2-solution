@@ -1,0 +1,55 @@
+
+
+/*Base Styling*/
+
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+}
+
+#chicken{
+	background: hotpink;
+	border: solid black 1px;
+}
+
+#beef{
+	background: yellowgreen;
+	border: solid black 1px;
+}
+
+#sushi{
+	background: skyblue;
+	border: solid black 1px;
+}
+
+
+/*Mobile*/
+@media (max-width: 767px) {
+	#chicken #beef #sushi {
+		float: left;
+		width: 100%;
+	}
+}
+
+/*Tablet*/
+@media (min-width: 768) and (max-width: 991px){
+	#chicken #beef {
+		float: left;
+		width: 50%;
+	}
+	#sushi {
+		clear: left;
+		width: 100%;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+	#chicken #beef #sushi {
+		width: 33.33%;
+		float: left;
+	}
+}
