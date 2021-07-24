@@ -4,6 +4,7 @@
 
 *{
 	box-sizing: border-box;
+	align-items: center;
 }
 
 h1{
@@ -13,43 +14,55 @@ h1{
 #chicken{
 	background: hotpink;
 	border: solid black 1px;
+	margin: 10px;
+	padding: 10px;
 }
 
 #beef{
 	background: yellowgreen;
 	border: solid black 1px;
+	margin: 10px;
+	padding: 10px;
 }
 
 #sushi{
 	background: skyblue;
 	border: solid black 1px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#chicken-header #beef-header #sushi-header{
+	border: solid-black 1px;
 }
 
 
 /*Mobile*/
 @media (max-width: 767px) {
-	#chicken #beef #sushi {
-		float: left;
-		width: 100%;
-	}
+	
 }
 
 /*Tablet*/
 @media (min-width: 768) and (max-width: 991px){
-	#chicken #beef {
+	.col-md-6 .col-md-12{
 		float: left;
-		width: 50%;
 	}
-	#sushi {
-		clear: left;
-		width: 100%;
-	}
+
+  .col-md-6 {
+    width: 45%;
+  }
+
+  .col-md-12 {
+    width: 90%;
+  }
 }
 
 /*Desktop*/
 @media (min-width: 992px) {
-	#chicken #beef #sushi {
-		width: 33.33%;
-		float: left;
-	}
+ .col-lg-4 {
+    float: left;
+ }
+  .col-lg-4 {
+    width: 30%;
+  }
 }
